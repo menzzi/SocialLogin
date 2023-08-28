@@ -22,11 +22,23 @@ repositories {
 }
 
 dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springframework.security:spring-security-core:4.0.4.RELEASE'
+
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
+
+	implementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.2.0'
+	implementation 'javax.xml.bind:jaxb-api:2.1'
+
 }
 
 tasks.named('test') {

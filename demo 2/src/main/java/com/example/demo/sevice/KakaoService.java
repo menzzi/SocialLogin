@@ -25,8 +25,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @RequiredArgsConstructor
 public class KakaoService {
 
-    @Autowired
-    private final MemberRepository memberRepository;
+    private final MemberRepository memberRepository; // 생성자 주입
     @Value("${kakao.client.id}")
     private String KAKAO_CLIENT_ID;
 

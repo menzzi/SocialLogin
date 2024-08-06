@@ -25,7 +25,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @RequiredArgsConstructor
 public class NaverService {
 
-    @Autowired
     private final MemberRepository memberRepository;
 
 
